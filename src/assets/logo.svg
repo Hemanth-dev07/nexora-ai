@@ -1,0 +1,46 @@
+<svg width="202" height="38" viewBox="0 0 202 38" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nexora.ai logo</title>
+  <desc id="desc">Nexora.ai logo with transparent background, larger Outfit wordmark, and only the ai text in purple.</desc>
+  <defs>
+    <style><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+      .outfit-wordmark {
+        font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.62px;
+        dominant-baseline: alphabetic;
+      }
+    ]]></style>
+    <linearGradient id="iconBlueViolet" x1="0" y1="2" x2="42" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#147AFF"/>
+      <stop offset="1" stop-color="#5044E5"/>
+    </linearGradient>
+    <linearGradient id="aiPurpleGradient" x1="162" y1="18" x2="201" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+    <filter id="softInset" x="0" y="0" width="42" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="0.15" flood-color="#FFFFFF" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent background: no background rectangle is used. -->
+  <g id="mark">
+    <path d="M13.2371 1.5H31.2418L18.0047 21.12H0L13.2371 1.5Z" fill="#147AFF"/>
+    <path d="M14.0333 22.9396L8.90625 30.5389H27.765L41.0021 10.9189H27.0832L18.9731 22.9396H14.0333Z" fill="#5044E5"/>
+    <path d="M13.2371 1.5H31.2418L27.0832 10.9189H41.0021L27.765 30.5389H8.90625L14.0333 22.9396H0L13.2371 1.5Z" fill="url(#iconBlueViolet)" opacity="0.18"/>
+    <g filter="url(#softInset)">
+      <path d="M12.7 22.45L20.8 9.55L28.75 22.45" stroke="#FFFFFF" stroke-width="2.12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.95 16.45H24.65" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round"/>
+      <circle cx="20.8" cy="9.55" r="2.02" fill="#FFFFFF"/>
+      <circle cx="12.7" cy="22.45" r="2.02" fill="#FFFFFF"/>
+      <circle cx="28.75" cy="22.45" r="2.02" fill="#FFFFFF"/>
+      <path d="M31.1 8.25L32.06 10.36L34.2 11.35L32.06 12.34L31.1 14.45L30.12 12.34L27.98 11.35L30.12 10.36L31.1 8.25Z" fill="#FFFFFF" opacity="0.94"/>
+    </g>
+  </g>
+
+  <g id="wordmark" aria-label="nexora.ai">
+    <text x="50.55" y="30" class="outfit-wordmark" fill="#111111">nexora.<tspan fill="url(#aiPurpleGradient)">ai</tspan></text>
+  </g>
+</svg>
