@@ -1,16 +1,94 @@
-# React + Vite
+# Nexora AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nexora AI is a modern digital agency landing page built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive design
+- Light and dark mode
+- Hero section
+- Services section
+- Portfolio / work showcase
+- Team section
+- Contact form using Web3Forms
+- Toast notifications
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- React Hot Toast
+- Web3Forms
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the project and install dependencies:
+
+```bash
+git clone <repository-url>
+cd nexora-ai
+npm install
+```
+
+## Environment Variables
+
+Create a `.env.local` file in the root folder and add your Web3Forms access key:
+
+```env
+VITE_WEB3FORMS_ACCESS_KEY_LIVE=your_web3forms_access_key_here
+```
+
+## Run Locally
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+## Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+├── utils/
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+## Main Components
+
+- `Navbar.jsx`
+- `Hero.jsx`
+- `Services.jsx`
+- `OurWork.jsx`
+- `Teams.jsx`
+- `ContactUs.jsx`
+- `Footer.jsx`
+- `ThemeToggleBtn.jsx`
+
+## Notes
+
+- Keep `.env.local` private.
+- Do not commit `node_modules`.
+- Update assets from the `src/assets` folder.
+- Update page sections from the `src/components` folder.
