@@ -10,7 +10,9 @@ const ContactUs = () => {
 
         const formData = new FormData(e.target)
 
-        const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+        //const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+        const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY_LIVE
+
 
         if (!accessKey) {
             toast.error('Form access key is missing.')
