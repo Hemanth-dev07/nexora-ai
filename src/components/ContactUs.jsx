@@ -49,7 +49,7 @@ const ContactUs = () => {
             <Title title='Reach out to us' desc='Have a question, project idea, or need help growing your brand? Fill out the form and our team will get back to you soon.' />
             <form onSubmit={onSubmit} className='grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full'>
                 <div>
-                    <label for="name" className='mb-2 text-sm font-medium'>Your Name</label>
+                    <label htmlFor="name" className='mb-2 text-sm font-medium'>Your Name</label>
                     <div className='flex pl-3 rounded-lg border border-gray-300 
             dark:border-gray-600'>
                         <img src={assets.person_icon} alt="User icon" />
@@ -59,7 +59,7 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                    <label for="email" className='mb-2 text-sm font-medium'>Email ID</label>
+                    <label htmlFor="email" className='mb-2 text-sm font-medium'>Email ID</label>
                     <div className='flex pl-3 rounded-lg border border-gray-300 
             dark:border-gray-600'>
                         <img src={assets.email_icon} alt="Email icon" />
@@ -69,7 +69,7 @@ const ContactUs = () => {
                 </div>
 
                 <div className='sm:col-span-2'>
-                    <label for="message" className='mb-2 text-sm font-medium'>Message</label>
+                    <label htmlFor="message" className='mb-2 text-sm font-medium'>Message</label>
                     <textarea id='message' rows={8} placeholder='Enter your message' className='w-full 
             p-3 text-sm outline-none rounded-lg border border-gray-300 
             dark:border-gray-600' name='message' required />
