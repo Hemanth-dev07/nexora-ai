@@ -2,6 +2,7 @@ import React from 'react'
 import Title from './Title'
 import assets from '../assets/assets'
 import toast from 'react-hot-toast'
+import { motion } from 'motion/react'
 
 const ContactUs = () => {
 
@@ -43,11 +44,21 @@ const ContactUs = () => {
 
     }
     return (
-        <div id='contact-us' className='flex flex-col items-center 
+        <motion.div 
+        initial="hidden"
+        whileInView="visiable"
+        viewport={{once: true}}
+        transition={{staggerChildren: 0.2}}
+        id='contact-us' className='flex flex-col items-center 
     gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 pt-30 text-gray-700 
     dark:text-white'>
             <Title title='Reach out to us' desc='Have a question, project idea, or need help growing your brand? Fill out the form and our team will get back to you soon.' />
-            <form onSubmit={onSubmit} className='grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full'>
+            <motion.form 
+            initial={{opacity: 0, y: 30}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.5, delay: 0.4}}
+            viewport={{once: true}}
+            onSubmit={onSubmit} className='grid sm:grid-cols-2 gap-3 sm:gap-5 max-w-2xl w-full'>
                 <div>
                     <label htmlFor="name" className='mb-2 text-sm font-medium'>Your Name</label>
                     <div className='flex pl-3 rounded-lg border border-gray-300 
@@ -81,8 +92,8 @@ const ContactUs = () => {
                     Submit <img src={assets.arrow_icon} alt="" className='w-4' />
                 </button>
 
-            </form>
-        </div>
+            </motion.form>
+        </motion.div>
     )
 }
 
