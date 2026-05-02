@@ -1,16 +1,17 @@
 # Nexora AI
 
-Nexora AI is a modern digital agency landing page built with React, Vite, and Tailwind CSS.
+A responsive and animated digital agency website built with React, Vite, and Tailwind CSS.
 
 ## Features
 
-- Responsive design
+- Responsive landing page
 - Light and dark mode
-- Hero section
-- Services section
-- Portfolio / work showcase
+- Animated page sections
+- Custom cursor effect
+- Services showcase
+- Work / portfolio section
 - Team section
-- Contact form using Web3Forms
+- Contact form with Web3Forms
 - Toast notifications
 
 ## Tech Stack
@@ -18,16 +19,22 @@ Nexora AI is a modern digital agency landing page built with React, Vite, and Ta
 - React
 - Vite
 - Tailwind CSS
+- Motion
 - React Hot Toast
 - Web3Forms
 
 ## Installation
 
-Clone the project and install dependencies:
+Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Hemanth-dev07/nexora-ai.git
 cd nexora-ai
+```
+
+Install dependencies:
+
+```bash
 npm install
 ```
 
@@ -41,8 +48,6 @@ VITE_WEB3FORMS_ACCESS_KEY_LIVE=your_web3forms_access_key_here
 
 ## Run Locally
 
-Start the development server:
-
 ```bash
 npm run dev
 ```
@@ -51,13 +56,11 @@ Open the local URL shown in the terminal.
 
 ## Build
 
-Create a production build:
-
 ```bash
 npm run build
 ```
 
-Preview the production build:
+## Preview Build
 
 ```bash
 npm run preview
@@ -69,26 +72,34 @@ npm run preview
 src/
 ├── assets/
 ├── components/
-├── utils/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── TrustedBy.jsx
+│   ├── Services.jsx
+│   ├── ServiceCard.jsx
+│   ├── OurWork.jsx
+│   ├── Teams.jsx
+│   ├── ContactUs.jsx
+│   ├── Footer.jsx
+│   ├── ThemeToggleBtn.jsx
+│   └── Title.jsx
 ├── App.jsx
 ├── index.css
 └── main.jsx
 ```
 
-## Main Components
+## Available Scripts
 
-- `Navbar.jsx`
-- `Hero.jsx`
-- `Services.jsx`
-- `OurWork.jsx`
-- `Teams.jsx`
-- `ContactUs.jsx`
-- `Footer.jsx`
-- `ThemeToggleBtn.jsx`
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm run preview` | Previews the production build |
+| `npm run lint` | Runs ESLint |
 
 ## Notes
 
 - Keep `.env.local` private.
 - Do not commit `node_modules`.
-- Update assets from the `src/assets` folder.
+- Update images and icons from the `src/assets` folder.
 - Update page sections from the `src/components` folder.
